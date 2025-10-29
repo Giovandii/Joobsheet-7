@@ -12,16 +12,16 @@ public class Tugasno3_14 {
         System.out.println("===Input Penjualan Percabang===");
         System.out.println("");
 
-        for(int i=1; i<=Cabkafe; i++){
+        for(int i=1; i<=Cabkafe; i++){  //pengecekan nilai i<= Cabkafe jika true maka keluaran seperti berikut
             System.out.println("---Cabang ke-"+i+"---");
             System.out.print("Masukan Jumlah Pelanggan : ");
-            pelanggan =sc.nextInt();
+            pelanggan =sc.nextInt();    //masukan jumlah pelanggan
 
             totItem =0;
-            for (int j=1; j<=pelanggan; j++){
+            for (int j=1; j<=pelanggan; j++){   //inner loop pengecekan nilai j<= pelanggan jika selagi true maka output seperti berikut
                 System.out.print("- Pelanggan ke-"+j+" memesan berapa item? ");
-                item =sc.nextInt();
-                totItem += item;
+                item =sc.nextInt();     //memasukan total belanjaan pelanggan ke-i
+                totItem += item;        //menjumlah item yang dibeli keseluruhan pelanggan pada cabang tersebut
                 
                 
             }
@@ -30,12 +30,12 @@ public class Tugasno3_14 {
             System.out.println("- Jumlah Pelanggan Hari ini \t: "+pelanggan);
             System.out.println("- Item Terjual \t: "+totItem);
             System.out.println("");
-            totitem +=totItem;
+            totitem +=totItem;      //menjumlah item yang dibeli pelanggan dari keseluruhan cabang
 
         }
         System.out.println("Total Seluruh Cabang : ");
         int totpelanggan =0;
-        totpelanggan += pelanggan;
+        totpelanggan += pelanggan;  //penjumlahan total pelanggan keseluruhan cabang pada hari tersebut
         System.out.println("- Jumlah Pelanggan\t: "+totpelanggan);
         System.out.println("- Jumlah item terjual\t: "+totitem);
 
